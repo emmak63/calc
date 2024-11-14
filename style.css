@@ -1,0 +1,119 @@
+/* Reset padding, margin, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f0ff;
+}
+
+/* Calculator container */
+.calculator {
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Display styling */
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 8px;
+    text-align: right;
+    background-color: #f3e8ff;
+    color: #5c497b;
+    margin-bottom: 15px;
+}
+
+/* Grid layout for number buttons */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #5c497b;
+    background-color: #e6d4ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #d4b9ff;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Operation buttons in a single row at the bottom */
+.operations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.operations button {
+    background-color: #d1a3ff;
+    color: #fff;
+}
+
+.operations button:hover {
+    background-color: #be82ff;
+}
+
+/* Style for the history */
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #5c497b;
+    margin-top: 15px;
+}
+
+ul#history-list li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+button:last-of-type {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #ff6666;
+    color: #fff;
+}
+
+button:last-of-type:hover {
+    background-color: #ff4d4d;
+}
+
+
+
+
+
